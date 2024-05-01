@@ -1,0 +1,29 @@
+@import "https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap";
+
+.shorts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.beautiful-button {
+  margin-top: 20px;
+  padding: 4px 12px;
+  font-size: 14px;
+  color: white;
+  background-color: #0272a9;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.beautiful-button:hover {
+  background-color: #04618f;
+  transform: scale(1.05);
+}
+
+.beautiful-button:active {
+  background-color: #004085;
+}

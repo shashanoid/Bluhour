@@ -1,0 +1,182 @@
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 70%;
+  height: 80vh;
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  border: 0.5px solid rgba(214, 214, 214, 0.1);
+  background-clip: padding-box;
+  position: relative;
+  display: flex;
+  padding: 20px;
+  margin-top: 40px;
+  box-shadow: 2px 8px 14px rgba(0, 0, 0, 0.2); /* Add awesome box shadow to the bottom */
+  margin-bottom: 20px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #1b1b1b 0%, #0c0d10 100%);
+  opacity: 0.11;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.side1 {
+  flex: 35%; /* 30% of the container */
+  padding-right: 24px;
+}
+
+.side2 {
+  flex: 65%; /* 70% of the container */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 24px;
+}
+
+.divider {
+  width: 0.5px; /* Slightly thicker divider line */
+  height: 100%;
+  background-color: #b6b1b1;
+  left: 30%; /* Positioning the divider at 30% from the left */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+}
+
+
+.slick-input {
+  width: calc(
+    100% - 40px
+  ); /* Adjust width to fit container, considering padding */
+  padding: 10px 20px; /* Comfortable padding */
+  font-size: 16px; /* Matching the text size in the rest of the component */
+  background: rgba(255, 255, 255, 0.1); /* Transparent background */
+  color: #ffffff; /* White text color for visibility */
+  border-radius: 10px; /* Rounded corners to match the card style */
+  outline: none; /* Removing the default focus outline */
+  box-shadow: none; /* No drop shadow for a flat design */
+}
+
+.slick-input:focus {
+  border-color: rgba(255, 255, 255, 0.5); /* Brighter border on focus */
+}
+
+.input-form {
+  position: absolute;
+  bottom: 20px; /* Adjust as necessary to align within the container */
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0 20px; /* Padding to keep within the side's boundaries */
+  display: flex;
+}
+
+.input-form button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #1b1b1b; /* Dark background for the button */
+  color: #ffffff; /* Text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-form button:hover {
+  background-color: #2b2a2a; /* Slightly lighter on hover */
+}
+
+.progress-text {
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.scene-content {
+  background: rgb(255 255 255 / 5%);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.scene-content:hover {
+  cursor: pointer;
+  background: rgba(214, 214, 214, 0.2);
+  transition: all 0.3s ease;
+  transform: scale(1.05);
+}
+
+.scene-content-container {
+  display: flex;
+  transition: all 0.3s ease;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button-futuristic {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Thin white semi-transparent border */
+  color: white;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  border-radius: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-right: 2px;
+  margin-bottom: 4px;
+}
+
+.button-futuristic:hover {
+  border-color: rgba(255, 255, 255, 0.8); /* Brighter border on hover */
+  transform: scale(1.05); /* Slight scale-up on hover */
+}
+
+.button-futuristic.highlighted {
+  background-color: #939393; /* Change color as needed */
+  color: white; /* Text color */
+}
+
+.progress-container {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  height: 4px;
+  background: linear-gradient(to right, #2e506c, #88c49c);
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+  top: 10px;
+}
+.content-container {
+  display: flex;
+}
